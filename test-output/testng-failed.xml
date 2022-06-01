@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="webAutomation.portofolio.WebTest">
+        <methods>
+          <include name="quitChromeDriver"/>
+          <include name="register_user_with_correct_password"/>
+          <include name="createChromeDriver"/>
+        </methods>
+      </class> <!-- webAutomation.portofolio.WebTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
