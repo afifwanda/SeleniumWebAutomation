@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="methods" name="Suite">
+  <test thread-count="4" parallel="methods" name="Test">
+    <classes>
+      <class name="webAutomation.portofolio.positive_case.AddAddress"/>
+	  <class name="webAutomation.portofolio.positive_case.Login"/>
+	  <class name="webAutomation.portofolio.positive_case.Register"/>
+      <class name="webAutomation.portofolio.negative_case.AddAddress"/>
+	  <class name="webAutomation.portofolio.negative_case.Login"/>
+	  <class name="webAutomation.portofolio.negative_case.Register"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

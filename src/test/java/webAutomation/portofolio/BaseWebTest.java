@@ -13,17 +13,17 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseWebTest {
 	
-	ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>();
-	ThreadLocal<WebDriverWait> explicitWait = new ThreadLocal<WebDriverWait>();
+	protected ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>();
+	protected ThreadLocal<WebDriverWait> explicitWait = new ThreadLocal<WebDriverWait>();
 	
 	@BeforeMethod
 	public void createChromeDriver() {
 		WebDriverManager.chromedriver().setup();
 		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--headless","--disable-gpu","--window-size=1920,1200");
+		options.addArguments("--headless","--disable-gpu","--window-size=1920,1200","--disable-blink-features=AutomationControlled");
 		driver.set(new ChromeDriver(options));
 		explicitWait.set(new WebDriverWait(driver.get(), Duration.ofSeconds(10)));
-		driver.get().get("https://www.booking.com/");
+		driver.get().get("http://opencart.abstracta.us/");
 		driver.get().manage().window().maximize();
 	}
 

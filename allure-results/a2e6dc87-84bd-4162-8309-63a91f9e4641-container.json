@@ -1,0 +1,1 @@
+{"uuid":"a2e6dc87-84bd-4162-8309-63a91f9e4641","name":"webAutomation.portofolio.BaseWebTest.createChromeDriver","description":"","start":1654074250043,"stop":1654074275167,"children":["d7ce548d-ccd2-4f0b-8b0e-74356691afbf"],"befores":[{"name":"createChromeDriver","status":"passed","stage":"finished","description":"","start":1654074250044,"stop":1654074275166}]}

@@ -7,26 +7,36 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class HomePage extends BasePageFactory{
-	@FindBy(xpath = "//a[@class='bui-button bui-button--secondary js-header-login-link']//span[@class='bui-button__text'][normalize-space()='Register']")
-	private WebElement registerButton;
+	@FindBy(xpath = "//span[normalize-space()='My Account']")
+	private WebElement accountButton;
 	
-	@FindBy(xpath = "//span[normalize-space()='List your property']")
-	private WebElement listProperty;
+
+	@FindBy(xpath = "//a[normalize-space()='Register']")
+	private WebElement registerSubButton;
+	
+	@FindBy(xpath = "//ul[@class='dropdown-menu dropdown-menu-right']//a[contains(text(),'Login')]")
+	private WebElement loginSubButton;
+	
 
 
 	public HomePage(ThreadLocal<WebDriver> driver, ThreadLocal<WebDriverWait> explicitWait) {
 		super(driver, explicitWait);
 		PageFactory.initElements(driver.get(), this);
 	}
-
 	
-	public String textAfterRegister() {
-		return listProperty.getText();
-	}
 	
 	public void clickButton() {
-		registerButton.click();
+		accountButton.click();
 	}
+	
+	public void clickRegister() {
+		registerSubButton.click();
+	}
+	
+	public void clickLogin() {
+		loginSubButton.click();
+	}
+	
 
 }
 

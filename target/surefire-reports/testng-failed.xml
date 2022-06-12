@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="methods" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" parallel="methods" name="Test(failed)" verbose="0">
+    <classes>
+      <class name="webAutomation.portofolio.negative_case.AddAddress">
+        <methods>
+          <include name="quitChromeDriver"/>
+          <include name="user_add_address_with_postalCode_exceed_maximum_character"/>
+          <include name="user_add_address_with_alphabetical_postalCode"/>
+          <include name="user_add_address_without_input_mandatory_fields"/>
+          <include name="createChromeDriver"/>
+        </methods>
+      </class> <!-- webAutomation.portofolio.negative_case.AddAddress -->
+      <class name="webAutomation.portofolio.negative_case.Register">
+        <methods>
+          <include name="quitChromeDriver"/>
+          <include name="register_user_with_different_confirm_password"/>
+          <include name="createChromeDriver"/>
+        </methods>
+      </class> <!-- webAutomation.portofolio.negative_case.Register -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

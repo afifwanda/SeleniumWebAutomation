@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">13</td><td class="num">0</td><td class="num attn">4</td><td class="num">135,598</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">webAutomation.portofolio.negative_case.AddAddress</td><td><a href="#m0">user_add_address_with_alphabetical_postalCode</a></td><td rowspan="1">1655019007083</td><td rowspan="1">9302</td></tr><tr class="failedeven"><td><a href="#m1">user_add_address_with_postalCode_exceed_maximum_character</a></td><td rowspan="1">1655019007083</td><td rowspan="1">5900</td></tr><tr class="failedeven"><td><a href="#m2">user_add_address_without_input_mandatory_fields</a></td><td rowspan="1">1655019021915</td><td rowspan="1">9263</td></tr><tr class="failedodd"><td rowspan="1">webAutomation.portofolio.negative_case.Register</td><td><a href="#m3">register_user_with_different_confirm_password</a></td><td rowspan="1">1655019052172</td><td rowspan="1">6609</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">webAutomation.portofolio.negative_case.AddAddress</td><td><a href="#m4">user_add_address_with_postalCode_below_minimum_character</a></td><td rowspan="1">1655019007083</td><td rowspan="1">9076</td></tr><tr class="passedodd"><td rowspan="3">webAutomation.portofolio.negative_case.Login</td><td><a href="#m5">login_user_with_exceed_login_number_attempt</a></td><td rowspan="1">1655019022640</td><td rowspan="1">17553</td></tr><tr class="passedodd"><td><a href="#m6">login_user_with_unregistered_user</a></td><td rowspan="1">1655019021915</td><td rowspan="1">5653</td></tr><tr class="passedodd"><td><a href="#m7">login_user_with_wrong_password</a></td><td rowspan="1">1655019051393</td><td rowspan="1">5481</td></tr><tr class="passedeven"><td rowspan="6">webAutomation.portofolio.negative_case.Register</td><td><a href="#m8">register_user_with_exceed_character_maximum_first_name</a></td><td rowspan="1">1655019048816</td><td rowspan="1">6997</td></tr><tr class="passedeven"><td><a href="#m9">register_user_with_password_below_minimum_characters</a></td><td rowspan="1">1655019097017</td><td rowspan="1">8011</td></tr><tr class="passedeven"><td><a href="#m10">register_user_with_registered_mail</a></td><td rowspan="1">1655019081775</td><td rowspan="1">16046</td></tr><tr class="passedeven"><td><a href="#m11">register_user_with_telephone_below_minimum_characters</a></td><td rowspan="1">1655019098767</td><td rowspan="1">8865</td></tr><tr class="passedeven"><td><a href="#m12">register_user_without_check_terms_condition</a></td><td rowspan="1">1655019102644</td><td rowspan="1">8258</td></tr><tr class="passedeven"><td><a href="#m13">register_user_without_input_first_name</a></td><td rowspan="1">1655019102955</td><td rowspan="1">7995</td></tr><tr class="passedodd"><td rowspan="1">webAutomation.portofolio.positive_case.AddAddress</td><td><a href="#m14">user_add_address</a></td><td rowspan="1">1655018981046</td><td rowspan="1">8559</td></tr><tr class="passedeven"><td rowspan="1">webAutomation.portofolio.positive_case.Login</td><td><a href="#m15">login_user</a></td><td rowspan="1">1655018981013</td><td rowspan="1">5945</td></tr><tr class="passedodd"><td rowspan="1">webAutomation.portofolio.positive_case.Register</td><td><a href="#m16">register_user</a></td><td rowspan="1">1655018981013</td><td rowspan="1">6557</td></tr></tbody>
+</table>
+<h2>Test</h2><h3 id="m0">webAutomation.portofolio.negative_case.AddAddress#user_add_address_with_alphabetical_postalCode</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: 
+	at webAutomation.portofolio.negative_case.AddAddress.user_add_address_with_alphabetical_postalCode(AddAddress.java:176)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 13 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">webAutomation.portofolio.negative_case.AddAddress#user_add_address_with_postalCode_exceed_maximum_character</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//ul[@class=&apos;list-unstyled&apos;]//a[contains(text(),&apos;Address Book&apos;)]&quot;}
+  (Session info: headless chrome=102.0.5005.61)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0-beta-3&apos;, revision: &apos;5d108f9a67&apos;
+System info: host: &apos;192.168.1.10&apos;, ip: &apos;192.168.1.10&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [45fc991a2fe824949f92626debacb49b, findElement {using=xpath, value=//ul[@class=&apos;list-unstyled&apos;]//a[contains(text(),&apos;Address Book&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/s7/1f4d8wmn1v3...}, goog:chromeOptions: {debuggerAddress: localhost:64336}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:64336/devtoo..., se:cdpVersion: 102.0.5005.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 45fc991a2fe824949f92626debacb49b
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:198)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:153)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:128)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:619)
+	at org.openqa.selenium.remote.RemoteWebDriver$Mechanism$2.findElement(RemoteWebDriver.java:1258)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:386)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.click(Unknown Source)
+	at webAutomation.portofolio.AddressPage.ClickAddressBook(AddressPage.java:103)
+	at webAutomation.portofolio.negative_case.AddAddress.user_add_address_with_postalCode_exceed_maximum_character(AddAddress.java:79)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">webAutomation.portofolio.negative_case.AddAddress#user_add_address_without_input_mandatory_fields</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Cannot locate option with text: Bristol
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0-beta-3&apos;, revision: &apos;5d108f9a67&apos;
+System info: host: &apos;192.168.1.10&apos;, ip: &apos;192.168.1.10&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;17.0.1&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:151)
+	at webAutomation.portofolio.AddressPage.inputArea(AddressPage.java:99)
+	at webAutomation.portofolio.negative_case.AddAddress.user_add_address_without_input_mandatory_fields(AddAddress.java:46)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 10 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">webAutomation.portofolio.negative_case.Register#register_user_with_different_confirm_password</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at webAutomation.portofolio.negative_case.Register.register_user_with_different_confirm_password(Register.java:44)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 14 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">webAutomation.portofolio.negative_case.AddAddress#user_add_address_with_postalCode_below_minimum_character</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">webAutomation.portofolio.negative_case.Login#login_user_with_exceed_login_number_attempt</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">webAutomation.portofolio.negative_case.Login#login_user_with_unregistered_user</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">webAutomation.portofolio.negative_case.Login#login_user_with_wrong_password</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">webAutomation.portofolio.negative_case.Register#register_user_with_exceed_character_maximum_first_name</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">webAutomation.portofolio.negative_case.Register#register_user_with_password_below_minimum_characters</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">webAutomation.portofolio.negative_case.Register#register_user_with_registered_mail</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">webAutomation.portofolio.negative_case.Register#register_user_with_telephone_below_minimum_characters</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">webAutomation.portofolio.negative_case.Register#register_user_without_check_terms_condition</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">webAutomation.portofolio.negative_case.Register#register_user_without_input_first_name</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">webAutomation.portofolio.positive_case.AddAddress#user_add_address</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">webAutomation.portofolio.positive_case.Login#login_user</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">webAutomation.portofolio.positive_case.Register#register_user</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

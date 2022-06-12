@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="webAutomation.portofolio.WebTest">
+      <class name="webAutomation.portofolio.negative_case.Login">
         <methods>
+          <include name="login_user_with_exceed_login_number_attempt"/>
           <include name="quitChromeDriver"/>
-          <include name="register_user_with_correct_password"/>
           <include name="createChromeDriver"/>
         </methods>
-      </class> <!-- webAutomation.portofolio.WebTest -->
+      </class> <!-- webAutomation.portofolio.negative_case.Login -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

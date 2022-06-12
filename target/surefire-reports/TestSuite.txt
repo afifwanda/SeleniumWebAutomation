@@ -1,0 +1,34 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 17, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 136.895 sec <<< FAILURE! - in TestSuite
+user_add_address_with_postalCode_exceed_maximum_character(webAutomation.portofolio.negative_case.AddAddress)  Time elapsed: 5.905 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//ul[@class='list-unstyled']//a[contains(text(),'Address Book')]"}
+  (Session info: headless chrome=102.0.5005.61)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-beta-3', revision: '5d108f9a67'
+System info: host: '192.168.1.10', ip: '192.168.1.10', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [45fc991a2fe824949f92626debacb49b, findElement {using=xpath, value=//ul[@class='list-unstyled']//a[contains(text(),'Address Book')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/s7/1f4d8wmn1v3...}, goog:chromeOptions: {debuggerAddress: localhost:64336}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:64336/devtoo..., se:cdpVersion: 102.0.5005.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 45fc991a2fe824949f92626debacb49b
+	at webAutomation.portofolio.negative_case.AddAddress.user_add_address_with_postalCode_exceed_maximum_character(AddAddress.java:79)
+
+user_add_address_with_alphabetical_postalCode(webAutomation.portofolio.negative_case.AddAddress)  Time elapsed: 9.302 sec  <<< FAILURE!
+java.lang.AssertionError: 
+	at webAutomation.portofolio.negative_case.AddAddress.user_add_address_with_alphabetical_postalCode(AddAddress.java:176)
+
+user_add_address_without_input_mandatory_fields(webAutomation.portofolio.negative_case.AddAddress)  Time elapsed: 8.54 sec  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Cannot locate option with text: Bristol
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-beta-3', revision: '5d108f9a67'
+System info: host: '192.168.1.10', ip: '192.168.1.10', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '17.0.1'
+Driver info: driver.version: unknown
+	at webAutomation.portofolio.negative_case.AddAddress.user_add_address_without_input_mandatory_fields(AddAddress.java:46)
+
+register_user_with_different_confirm_password(webAutomation.portofolio.negative_case.Register)  Time elapsed: 6.609 sec  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at webAutomation.portofolio.negative_case.Register.register_user_with_different_confirm_password(Register.java:44)
+
