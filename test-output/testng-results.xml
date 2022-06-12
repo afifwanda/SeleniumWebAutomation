@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
+<testng-results ignored="6" total="7" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-06-12T07:32:42Z" name="Default suite" finished-at="2022-06-12T07:33:01Z" duration-ms="19547">
+  <suite started-at="2022-06-12T09:52:52Z" name="Default suite" finished-at="2022-06-12T09:53:03Z" duration-ms="10802">
     <groups>
     </groups>
-    <test started-at="2022-06-12T07:32:42Z" name="Default test" finished-at="2022-06-12T07:33:01Z" duration-ms="19547">
-      <class name="webAutomation.portofolio.negative_case.AddAddress">
-        <test-method is-config="true" signature="createChromeDriver()[pri:0, instance:webAutomation.portofolio.negative_case.AddAddress@5f354bcf]" started-at="2022-06-12T07:32:42Z" name="createChromeDriver" finished-at="2022-06-12T07:32:49Z" duration-ms="7007" status="PASS">
+    <test started-at="2022-06-12T09:52:52Z" name="Default test" finished-at="2022-06-12T09:53:03Z" duration-ms="10802">
+      <class name="webAutomation.portofolio.negative_case.Register">
+        <test-method is-config="true" signature="createChromeDriver()[pri:0, instance:webAutomation.portofolio.negative_case.Register@74589991]" started-at="2022-06-12T09:52:52Z" name="createChromeDriver" finished-at="2022-06-12T09:52:57Z" duration-ms="4735" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createChromeDriver -->
-        <test-method signature="user_add_address_with_postalCode_exceed_maximum_character()[pri:0, instance:webAutomation.portofolio.negative_case.AddAddress@5f354bcf]" started-at="2022-06-12T07:32:49Z" name="user_add_address_with_postalCode_exceed_maximum_character" finished-at="2022-06-12T07:33:01Z" duration-ms="12316" status="PASS">
+        <test-method signature="register_user_with_different_confirm_password()[pri:0, instance:webAutomation.portofolio.negative_case.Register@74589991]" started-at="2022-06-12T09:52:57Z" name="register_user_with_different_confirm_password" finished-at="2022-06-12T09:53:03Z" duration-ms="5854" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- user_add_address_with_postalCode_exceed_maximum_character -->
-        <test-method is-config="true" signature="quitChromeDriver()[pri:0, instance:webAutomation.portofolio.negative_case.AddAddress@5f354bcf]" started-at="2022-06-12T07:33:01Z" name="quitChromeDriver" finished-at="2022-06-12T07:33:01Z" duration-ms="88" status="PASS">
+        </test-method> <!-- register_user_with_different_confirm_password -->
+        <test-method is-config="true" signature="quitChromeDriver()[pri:0, instance:webAutomation.portofolio.negative_case.Register@74589991]" started-at="2022-06-12T09:53:03Z" name="quitChromeDriver" finished-at="2022-06-12T09:53:03Z" duration-ms="84" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitChromeDriver -->
-      </class> <!-- webAutomation.portofolio.negative_case.AddAddress -->
+      </class> <!-- webAutomation.portofolio.negative_case.Register -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

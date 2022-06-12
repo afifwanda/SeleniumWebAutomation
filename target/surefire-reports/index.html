@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">17 methods, 4 failed,   13 passed</span>
+                    <span class="method-stats">17 methods, 2 failed,   15 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -108,16 +108,6 @@
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="webAutomation.portofolio.negative_case.AddAddress" class="method navigator-link" hash-for-method="user_add_address_with_alphabetical_postalCode">user_add_address_with_alphabetical_postalCode</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="webAutomation.portofolio.negative_case.AddAddress" class="method navigator-link" hash-for-method="user_add_address_with_postalCode_exceed_maximum_character">user_add_address_with_postalCode_exceed_maximum_character</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="webAutomation.portofolio.negative_case.AddAddress" class="method navigator-link" hash-for-method="user_add_address_without_input_mandatory_fields">user_add_address_without_input_mandatory_fields</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -194,6 +184,16 @@
                         <a href="#" panel-name="suite-Suite" title="webAutomation.portofolio.negative_case.AddAddress" class="method navigator-link" hash-for-method="user_add_address_with_postalCode_below_minimum_character">user_add_address_with_postalCode_below_minimum_character</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="webAutomation.portofolio.negative_case.AddAddress" class="method navigator-link" hash-for-method="user_add_address_with_postalCode_exceed_maximum_character">user_add_address_with_postalCode_exceed_maximum_character</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="webAutomation.portofolio.negative_case.AddAddress" class="method navigator-link" hash-for-method="user_add_address_without_input_mandatory_fields">user_add_address_without_input_mandatory_fields</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
@@ -223,62 +223,6 @@
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
 ... Removed 13 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="user_add_address_with_postalCode_exceed_maximum_character">
-                  </a> <!-- user_add_address_with_postalCode_exceed_maximum_character -->
-                  <span class="method-name">user_add_address_with_postalCode_exceed_maximum_character</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//ul[@class=&apos;list-unstyled&apos;]//a[contains(text(),&apos;Address Book&apos;)]&quot;}
-  (Session info: headless chrome=102.0.5005.61)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.0.0-beta-3&apos;, revision: &apos;5d108f9a67&apos;
-System info: host: &apos;192.168.1.10&apos;, ip: &apos;192.168.1.10&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;17.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [45fc991a2fe824949f92626debacb49b, findElement {using=xpath, value=//ul[@class=&apos;list-unstyled&apos;]//a[contains(text(),&apos;Address Book&apos;)]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.61, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/s7/1f4d8wmn1v3...}, goog:chromeOptions: {debuggerAddress: localhost:64336}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:64336/devtoo..., se:cdpVersion: 102.0.5005.61, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 45fc991a2fe824949f92626debacb49b
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:198)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:131)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:153)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:128)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:619)
-	at org.openqa.selenium.remote.RemoteWebDriver$Mechanism$2.findElement(RemoteWebDriver.java:1258)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:386)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy26.click(Unknown Source)
-	at webAutomation.portofolio.AddressPage.ClickAddressBook(AddressPage.java:103)
-	at webAutomation.portofolio.negative_case.AddAddress.user_add_address_with_postalCode_exceed_maximum_character(AddAddress.java:79)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 15 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="user_add_address_without_input_mandatory_fields">
-                  </a> <!-- user_add_address_without_input_mandatory_fields -->
-                  <span class="method-name">user_add_address_without_input_mandatory_fields</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Cannot locate option with text: Bristol
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.0.0-beta-3&apos;, revision: &apos;5d108f9a67&apos;
-System info: host: &apos;192.168.1.10&apos;, ip: &apos;192.168.1.10&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;17.0.1&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:151)
-	at webAutomation.portofolio.AddressPage.inputArea(AddressPage.java:99)
-	at webAutomation.portofolio.negative_case.AddAddress.user_add_address_without_input_mandatory_fields(AddAddress.java:46)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 10 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -339,21 +283,6 @@ Driver info: driver.version: unknown
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">webAutomation.portofolio.positive_case.Login</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="login_user">
-                  </a> <!-- login_user -->
-                  <span class="method-name">login_user</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">webAutomation.portofolio.negative_case.AddAddress</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -362,6 +291,35 @@ Driver info: driver.version: unknown
                   <a name="user_add_address_with_postalCode_below_minimum_character">
                   </a> <!-- user_add_address_with_postalCode_below_minimum_character -->
                   <span class="method-name">user_add_address_with_postalCode_below_minimum_character</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="user_add_address_with_postalCode_exceed_maximum_character">
+                  </a> <!-- user_add_address_with_postalCode_exceed_maximum_character -->
+                  <span class="method-name">user_add_address_with_postalCode_exceed_maximum_character</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="user_add_address_without_input_mandatory_fields">
+                  </a> <!-- user_add_address_without_input_mandatory_fields -->
+                  <span class="method-name">user_add_address_without_input_mandatory_fields</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">webAutomation.portofolio.positive_case.Login</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="login_user">
+                  </a> <!-- login_user -->
+                  <span class="method-name">login_user</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -506,71 +464,71 @@ data.addRows(17);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'login_user_with_exceed_login_number_attempt')
 data.setCell(0, 2, 'webAutomation.portofolio.negative_case.Login')
-data.setCell(0, 3, 17553);
+data.setCell(0, 3, 14064);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'register_user_with_registered_mail')
-data.setCell(1, 2, 'webAutomation.portofolio.negative_case.Register')
-data.setCell(1, 3, 16046);
+data.setCell(1, 1, 'user_add_address_with_postalCode_below_minimum_character')
+data.setCell(1, 2, 'webAutomation.portofolio.negative_case.AddAddress')
+data.setCell(1, 3, 9019);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'user_add_address_with_alphabetical_postalCode')
+data.setCell(2, 1, 'user_add_address_with_postalCode_exceed_maximum_character')
 data.setCell(2, 2, 'webAutomation.portofolio.negative_case.AddAddress')
-data.setCell(2, 3, 9302);
+data.setCell(2, 3, 9015);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'user_add_address_without_input_mandatory_fields')
 data.setCell(3, 2, 'webAutomation.portofolio.negative_case.AddAddress')
-data.setCell(3, 3, 9263);
+data.setCell(3, 3, 8650);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'user_add_address_with_postalCode_below_minimum_character')
+data.setCell(4, 1, 'user_add_address_with_alphabetical_postalCode')
 data.setCell(4, 2, 'webAutomation.portofolio.negative_case.AddAddress')
-data.setCell(4, 3, 9076);
+data.setCell(4, 3, 8645);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'register_user_with_telephone_below_minimum_characters')
-data.setCell(5, 2, 'webAutomation.portofolio.negative_case.Register')
-data.setCell(5, 3, 8865);
+data.setCell(5, 1, 'user_add_address')
+data.setCell(5, 2, 'webAutomation.portofolio.positive_case.AddAddress')
+data.setCell(5, 3, 8581);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'user_add_address')
-data.setCell(6, 2, 'webAutomation.portofolio.positive_case.AddAddress')
-data.setCell(6, 3, 8559);
+data.setCell(6, 1, 'register_user_with_exceed_character_maximum_first_name')
+data.setCell(6, 2, 'webAutomation.portofolio.negative_case.Register')
+data.setCell(6, 3, 6855);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'register_user_without_check_terms_condition')
+data.setCell(7, 1, 'register_user_with_registered_mail')
 data.setCell(7, 2, 'webAutomation.portofolio.negative_case.Register')
-data.setCell(7, 3, 8258);
+data.setCell(7, 3, 6836);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'register_user_with_password_below_minimum_characters')
+data.setCell(8, 1, 'register_user_with_different_confirm_password')
 data.setCell(8, 2, 'webAutomation.portofolio.negative_case.Register')
-data.setCell(8, 3, 8011);
+data.setCell(8, 3, 6741);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'register_user_without_input_first_name')
-data.setCell(9, 2, 'webAutomation.portofolio.negative_case.Register')
-data.setCell(9, 3, 7995);
+data.setCell(9, 1, 'register_user')
+data.setCell(9, 2, 'webAutomation.portofolio.positive_case.Register')
+data.setCell(9, 3, 6710);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'register_user_with_exceed_character_maximum_first_name')
+data.setCell(10, 1, 'register_user_with_password_below_minimum_characters')
 data.setCell(10, 2, 'webAutomation.portofolio.negative_case.Register')
-data.setCell(10, 3, 6997);
+data.setCell(10, 3, 6705);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'register_user_with_different_confirm_password')
+data.setCell(11, 1, 'register_user_without_input_first_name')
 data.setCell(11, 2, 'webAutomation.portofolio.negative_case.Register')
-data.setCell(11, 3, 6609);
+data.setCell(11, 3, 6196);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'register_user')
-data.setCell(12, 2, 'webAutomation.portofolio.positive_case.Register')
-data.setCell(12, 3, 6557);
+data.setCell(12, 1, 'register_user_without_check_terms_condition')
+data.setCell(12, 2, 'webAutomation.portofolio.negative_case.Register')
+data.setCell(12, 3, 6165);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'login_user')
-data.setCell(13, 2, 'webAutomation.portofolio.positive_case.Login')
-data.setCell(13, 3, 5945);
+data.setCell(13, 1, 'register_user_with_telephone_below_minimum_characters')
+data.setCell(13, 2, 'webAutomation.portofolio.negative_case.Register')
+data.setCell(13, 3, 6010);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'user_add_address_with_postalCode_exceed_maximum_character')
-data.setCell(14, 2, 'webAutomation.portofolio.negative_case.AddAddress')
-data.setCell(14, 3, 5900);
+data.setCell(14, 1, 'login_user')
+data.setCell(14, 2, 'webAutomation.portofolio.positive_case.Login')
+data.setCell(14, 3, 5683);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'login_user_with_unregistered_user')
+data.setCell(15, 1, 'login_user_with_wrong_password')
 data.setCell(15, 2, 'webAutomation.portofolio.negative_case.Login')
-data.setCell(15, 3, 5653);
+data.setCell(15, 3, 5249);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'login_user_with_wrong_password')
+data.setCell(16, 1, 'login_user_with_unregistered_user')
 data.setCell(16, 2, 'webAutomation.portofolio.negative_case.Login')
-data.setCell(16, 3, 5481);
+data.setCell(16, 3, 4784);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -601,13 +559,6 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">webAutomation.portofolio.positive_case.Register</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">createChromeDriver</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
               <div class="chronological-class-name">webAutomation.portofolio.positive_case.Login</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">createChromeDriver</span>
@@ -630,255 +581,237 @@ return data;
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">webAutomation.portofolio.positive_case.Register</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">createChromeDriver</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">register_user</span>
-                <span class="method-start">5536 ms</span>
+                <span class="method-start">8423 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">webAutomation.portofolio.positive_case.Login</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">login_user</span>
-                <span class="method-start">5536 ms</span>
+                <span class="method-start">8734 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">webAutomation.portofolio.negative_case.AddAddress</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">user_add_address_with_alphabetical_postalCode</span>
+                <span class="method-start">8954 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">webAutomation.portofolio.positive_case.AddAddress</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">user_add_address</span>
-                <span class="method-start">5569 ms</span>
+                <span class="method-start">9303 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">webAutomation.portofolio.positive_case.Login</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">quitChromeDriver</span>
-                <span class="method-start">11492 ms</span>
+                <span class="method-start">14432 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">webAutomation.portofolio.positive_case.Register</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">quitChromeDriver</span>
-                <span class="method-start">12094 ms</span>
+                <span class="method-start">15135 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">webAutomation.portofolio.negative_case.AddAddress</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">quitChromeDriver</span>
+                <span class="method-start">17609 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">webAutomation.portofolio.positive_case.AddAddress</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">quitChromeDriver</span>
-                <span class="method-start">14129 ms</span>
+                <span class="method-start">17885 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">webAutomation.portofolio.negative_case.AddAddress</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">createChromeDriver</span>
-                <span class="method-start">20960 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">createChromeDriver</span>
-                <span class="method-start">20990 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">createChromeDriver</span>
                 <span class="method-start">21018 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">createChromeDriver</span>
+                <span class="method-start">21078 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">createChromeDriver</span>
+                <span class="method-start">21135 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">user_add_address_with_postalCode_exceed_maximum_character</span>
-                <span class="method-start">31606 ms</span>
+                <span class="method-name">user_add_address_without_input_mandatory_fields</span>
+                <span class="method-start">25004 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">user_add_address_with_alphabetical_postalCode</span>
-                <span class="method-start">31606 ms</span>
+                <span class="method-name">user_add_address_with_postalCode_exceed_maximum_character</span>
+                <span class="method-start">25089 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">user_add_address_with_postalCode_below_minimum_character</span>
-                <span class="method-start">31606 ms</span>
+                <span class="method-start">25115 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quitChromeDriver</span>
-                <span class="method-start">37514 ms</span>
+                <span class="method-start">33656 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">quitChromeDriver</span>
-                <span class="method-start">40683 ms</span>
+                <span class="method-start">34105 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">quitChromeDriver</span>
-                <span class="method-start">40910 ms</span>
+                <span class="method-start">34135 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">webAutomation.portofolio.negative_case.Login</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">createChromeDriver</span>
-                <span class="method-start">41102 ms</span>
+                <span class="method-start">41218 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">createChromeDriver</span>
-                <span class="method-start">41198 ms</span>
+                <span class="method-start">41283 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">createChromeDriver</span>
+                <span class="method-start">41334 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">webAutomation.portofolio.negative_case.AddAddress</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">user_add_address_without_input_mandatory_fields</span>
-                <span class="method-start">46438 ms</span>
-              </div> <!-- test-method -->
+              <div class="chronological-class-name">webAutomation.portofolio.negative_case.Register</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">createChromeDriver</span>
+                <span class="method-start">41378 ms</span>
+              </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">webAutomation.portofolio.negative_case.Login</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">login_user_with_unregistered_user</span>
-                <span class="method-start">46438 ms</span>
+                <span class="method-start">45129 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">login_user_with_exceed_login_number_attempt</span>
-                <span class="method-start">47163 ms</span>
+                <span class="method-start">45149 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">quitChromeDriver</span>
-                <span class="method-start">52092 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">webAutomation.portofolio.negative_case.AddAddress</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">quitChromeDriver</span>
-                <span class="method-start">55704 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">webAutomation.portofolio.negative_case.Login</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">createChromeDriver</span>
-                <span class="method-start">61208 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">webAutomation.portofolio.negative_case.Register</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">createChromeDriver</span>
-                <span class="method-start">61311 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">createChromeDriver</span>
-                <span class="method-start">61409 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">webAutomation.portofolio.negative_case.Login</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">quitChromeDriver</span>
-                <span class="method-start">64717 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">webAutomation.portofolio.negative_case.Register</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">register_user_with_exceed_character_maximum_first_name</span>
-                <span class="method-start">73339 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">webAutomation.portofolio.negative_case.Login</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">login_user_with_wrong_password</span>
-                <span class="method-start">75916 ms</span>
+                <span class="method-start">45205 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quitChromeDriver</span>
+                <span class="method-start">49914 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">quitChromeDriver</span>
+                <span class="method-start">50455 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">quitChromeDriver</span>
+                <span class="method-start">59214 ms</span>
+              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">webAutomation.portofolio.negative_case.Register</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">createChromeDriver</span>
+                <span class="method-start">61464 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">createChromeDriver</span>
+                <span class="method-start">61536 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">createChromeDriver</span>
+                <span class="method-start">61580 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">register_user_with_registered_mail</span>
+                <span class="method-start">65303 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">register_user_with_exceed_character_maximum_first_name</span>
+                <span class="method-start">65769 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">register_user_with_password_below_minimum_characters</span>
+                <span class="method-start">66004 ms</span>
+              </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">register_user_with_different_confirm_password</span>
-                <span class="method-start">76695 ms</span>
+                <span class="method-start">66022 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quitChromeDriver</span>
-                <span class="method-start">80337 ms</span>
+                <span class="method-start">72139 ms</span>
               </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">webAutomation.portofolio.negative_case.Login</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">quitChromeDriver</span>
-                <span class="method-start">81398 ms</span>
+                <span class="method-start">72625 ms</span>
               </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">webAutomation.portofolio.negative_case.Register</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">createChromeDriver</span>
-                <span class="method-start">81404 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">createChromeDriver</span>
-                <span class="method-start">81517 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">createChromeDriver</span>
-                <span class="method-start">81612 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <span class="method-name">quitChromeDriver</span>
-                <span class="method-start">83305 ms</span>
+                <span class="method-start">72710 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">createChromeDriver</span>
-                <span class="method-start">101588 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">register_user_with_registered_mail</span>
-                <span class="method-start">106298 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">register_user_with_password_below_minimum_characters</span>
-                <span class="method-start">121540 ms</span>
-              </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quitChromeDriver</span>
-                <span class="method-start">122346 ms</span>
+                <span class="method-start">72764 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">createChromeDriver</span>
-                <span class="method-start">122431 ms</span>
+                <span class="method-start">81684 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">createChromeDriver</span>
+                <span class="method-start">81684 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">createChromeDriver</span>
+                <span class="method-start">81792 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">register_user_with_telephone_below_minimum_characters</span>
-                <span class="method-start">123290 ms</span>
+                <span class="method-start">85415 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">register_user_without_check_terms_condition</span>
-                <span class="method-start">127167 ms</span>
+                <span class="method-start">85423 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">register_user_without_input_first_name</span>
-                <span class="method-start">127478 ms</span>
+                <span class="method-start">85574 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">quitChromeDriver</span>
-                <span class="method-start">129552 ms</span>
+                <span class="method-start">91425 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">quitChromeDriver</span>
-                <span class="method-start">132157 ms</span>
+                <span class="method-start">91589 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method after">
                 <span class="method-name">quitChromeDriver</span>
-                <span class="method-start">135427 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">quitChromeDriver</span>
-                <span class="method-start">135474 ms</span>
+                <span class="method-start">91770 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

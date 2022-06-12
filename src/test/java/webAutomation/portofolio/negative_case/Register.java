@@ -22,7 +22,7 @@ public class Register extends BaseWebTest {
 		String lName = "marlon";
 		String email = Utils.mailRandomGenerator(Long.parseLong("199"), Long.parseLong("999"));
 		String password = "KKwipywehgiw61";
-		String cPassword = "KKwipywehgiw61";
+		String cPassword = "KKwipywehgiw62";
 		String phone = "536764762";
 		
 		homePage.clickButton();
